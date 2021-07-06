@@ -53,13 +53,13 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hello, {}, my name is {}! 
-I am an Anime themed group management bot with some fun extras ;)
+I am a group management bot with some fun extras ;)
 You can find the list of available commands with /help
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a part of [Akatsuki](https://t.me/PainRobotSupport)
+I'm a part of [RANDOM](https://t.me/ayojoiin)
 Have a look at the following for an idea of some of the things I can help you with.
 
 *Main* commands available:
@@ -77,12 +77,12 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/9127957b0437ed3a64332.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/1461f0aa61bb8c131866f.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
-You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+Saitama is hosted on one of Private Servers and doesn't require any donations as of now but \
+You can donate to the original writer of the Base code, Adeeva
+There are two ways of supporting him; [izzy](https://t.me/kang_keong17), or [Pocong](https://t.me/pocong_real)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -200,7 +200,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="➕ Add Pain To Your Group!",
+                            text="➕ Add Adeeva To Your Group!",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                      ],
@@ -209,18 +209,18 @@ def start(update: Update, context: CallbackContext):
                              text="⚙️ Support Group",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
-                             text="🔔Updates Channel",
-                             url="https://t.me/PainRobotUpdates")
+                             text="🔔Channel",
+                             url="https://t.me/simply_besties")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="📖 Getting Started Guide",
-                             url="https://t.me/PainRobotUpdates/4")
+                             text="OWNER",
+                             url="https://t.me/kang_keong17")
                      ],
                      [
                          InlineKeyboardButton(
                              text="💾 Source Code",
-                             url="https://github.com/PAINBOI2008/PainRobot")
+                             url="https://github.com/hitokizzy/")
                      ]]))
     else:
         update.effective_message.reply_text(
@@ -541,7 +541,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[This World Shall Know Pain!](https://telegra.ph/file/b5e2d0c7cee078e059d66.mp4)", parse_mode=ParseMode.MARKDOWN)
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[Adeeva!](https://telegra.ph/file/1461f0aa61bb8c131866f.jpg)", parse_mode=ParseMode.MARKDOWN)
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!")
@@ -585,7 +585,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Pain Is Now Online!")
+        LOGGER.info("Adeeva Is Now Online!")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
    
     if len(argv) not in (1, 3, 4):
