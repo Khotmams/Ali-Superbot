@@ -52,9 +52,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello, {}, my name is {}! 
-"""
-Haiii Guys 🥰👋🏻{}, Nama aku {}! 
+Haiii 👋🏻 {}, Nama aku {}! 
 Aku bot MANAGEMENT GROUP, Aku akan siap menjaga dan keamana grup kalian!:)
 Apabila kurang jelas bisa klik Command /help buat fitur-fitur lainnya ya guys!:))
 
