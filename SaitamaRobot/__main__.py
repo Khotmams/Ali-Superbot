@@ -53,36 +53,39 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hello, {}, my name is {}! 
-I am a group management bot with some fun extras ;)
-You can find the list of available commands with /help
+"""
+Haiii Guys 🥰👋🏻{}, Nama aku {}! 
+Aku bot MANAGEMENT GROUP, Aku akan siap menjaga dan keamana grup kalian!:)
+Apabila kurang jelas bisa klik Command /help buat fitur-fitur lainnya ya guys!:))
+
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a part of [RANDOM](https://t.me/ayojoiin)
-Have a look at the following for an idea of some of the things I can help you with.
+Halo guys namaku is *{}*.
+Aku berasal dari [CASTLE PATRIARCA](https://t.me/gsahmanja)
+Lihat di bawah ini untuk mendapatkan ide tentang beberapa hal yang dapat saya bantu.
 
-*Main* commands available:
+
+*Fitur* Perintah yang Tersedia:
  • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
+ • /help <nama Modul>: PM info tentang modul yang kamu tuju.
+ • /donate: informasi tentang Donasi!
  • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
-
-
+   • di PM: akan mengirimkan pengaturan Anda untuk semua modul yang didukung.
+   • dalam grup: akan mengarahkan Anda ke pm, dengan semua pengaturan obrolan itu.
+    
 {}
-And the following:
+Dan berikut ini:
 """.format(
     dispatcher.bot.first_name, ""
-    if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
+    if not ALLOW_EXCL else "\nSemua perintah dapat digunakan dengan / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/1461f0aa61bb8c131866f.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/a578f0c4bfab27127c188.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Saitama is hosted on one of Private Servers and doesn't require any donations as of now but \
 You can donate to the original writer of the Base code, Adeeva
-There are two ways of supporting him; [izzy](https://t.me/kang_keong17), or [Pocong](https://t.me/pocong_real)."""
+There are two ways of supporting him; [EJEN-ALI](https://t.me/Mastralii), or [Izzy](https://t.me/kang_keong17)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -216,11 +219,6 @@ def start(update: Update, context: CallbackContext):
                          InlineKeyboardButton(
                              text="OWNER",
                              url="https://t.me/kang_keong17")
-                     ],
-                     [
-                         InlineKeyboardButton(
-                             text="💾 Source Code",
-                             url="https://github.com/hitokizzy/")
                      ]]))
     else:
         update.effective_message.reply_text(
@@ -541,7 +539,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[Adeeva!](https://telegra.ph/file/1461f0aa61bb8c131866f.jpg)", parse_mode=ParseMode.MARKDOWN)
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[EJEN-ALI!](https://telegra.ph/file/a578f0c4bfab27127c188.jpg)", parse_mode=ParseMode.MARKDOWN)
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!")
