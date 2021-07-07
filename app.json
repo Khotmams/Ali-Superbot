@@ -71,6 +71,11 @@
          "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
          "required": true,
          "value": "-xyz"
+      },  
+      "ARQ_API": {
+         "description": "Get this from @ARQRobot",
+         "value": "",
+         "required": true
       },
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Saitama support then keep the current ID's here at they are and add yours.",
@@ -152,7 +157,7 @@
       "description": "Make your bot talk using Intellivoid's chatbot API, get your key from https://coffeehouse.intellivoid.net/",
          "required": false,
          "value": ""
-   },      
+      },      
       "BAN_STICKER": {
          "description": "ID of the sticker you want to use when banning people.",
          "required": false,
@@ -166,6 +171,16 @@
       "MONGO_DB_URI": {
          "description": "Database URL From https://www.mongodb.com/",
          "required": false,
+         "value": ""
+      },
+       "REDIS_URL": {
+         "description": "Redis URI create one from redislabs.com.",
+         "required": true,
+         "value": ""
+      },
+       "REDIS_PASS": {
+         "description": "Redis Password create one from redislabs.com.",
+         "required": true,
          "value": ""
       },
       "REM_BG_API_KEY": {
