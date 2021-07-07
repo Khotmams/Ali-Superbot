@@ -55,14 +55,12 @@ PM_START_TEXT = """
 Haiii 👋🏻 {}, Nama aku {}! 
 Aku bot MANAGEMENT GROUP, Aku akan siap menjaga dan keamana grup kalian!:)
 Apabila kurang jelas bisa klik Command /help buat fitur-fitur lainnya ya guys!:))
-
 """
 
 HELP_STRINGS = """
 Halo guys namaku is *{}*.
 Aku berasal dari [CASTLE PATRIARCA](https://t.me/gsahmanja)
 Lihat di bawah ini untuk mendapatkan ide tentang beberapa hal yang dapat saya bantu.
-
 
 *Fitur* Perintah yang Tersedia:
  • /help: PM's you this message.
@@ -71,6 +69,7 @@ Lihat di bawah ini untuk mendapatkan ide tentang beberapa hal yang dapat saya ba
  • /settings:
    • di PM: akan mengirimkan pengaturan Anda untuk semua modul yang didukung.
    • dalam grup: akan mengarahkan Anda ke pm, dengan semua pengaturan obrolan itu.
+   
     
 {}
 Dan berikut ini:
