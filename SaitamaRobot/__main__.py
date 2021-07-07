@@ -203,22 +203,22 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="➕ Add Adeeva To Your Group!",
+                            text="➕ Add SuperBot To Your Group!",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                      ],
                      [
                          InlineKeyboardButton(
-                             text="⚙️ Support Group",
+                             text="⚛️ Support Group",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
                              text="🔔Channel",
-                             url="https://t.me/simply_besties")
+                             url="https://t.me/patriarcach")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="OWNER",
-                             url="https://t.me/kang_keong17")
+                             text="👨🏻‍💻OWNER",
+                             url="https://t.me/mastralii")
                      ]]))
     else:
         update.effective_message.reply_text(
