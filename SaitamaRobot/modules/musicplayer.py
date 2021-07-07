@@ -1,26 +1,26 @@
-__mod_name__ = "Music Player"
+__mod_name__ = "VC PLAYER"
 
 __help__ = """
-=>> *Song Playing* 🎧 
-❍ /play <song name> - play song you requested
-❍ /dplay <song name> - play song you requested via deezer
-❍ /splay <song name> - play song you requested via jio saavn
-❍ /playlist - Show now playing list
-❍ /current - Show now playing
-❍ /song <song name> - download songs you want quickly
-❍ /search <query> - search videos on youtube with details
-❍ /deezer <song name> - download songs you want quickly via deezer
-❍ /saavn <song name> - download songs you want quickly via saavn
-❍ /video <song name> - download videos you want quickly
-=>> *Admins only*
-❍ /player - open music player settings panel
-❍ /pause - pause song play
-❍ /resume - resume song play
-❍ /skip - play next song
-❍ /end - stop music play
-❍ /userbotjoin - invite assistant to your chat
-❍ /admincache - Refresh admin list
-=>>   *Use*
-1) Add @LaylaRobot in your group to admin with all permission
-2) Add Assistant I'd to your group @LaylaAssistant
+=>> *Memutar Lagu* 🎧 
+❍ /play <nama lagu> - putar lagu yang Anda minta
+❍ /dplay <nama lagu> - putar lagu yang Anda minta melalui deezer
+❍ /splay <nama lagu> - putar lagu yang Anda minta melalui jio saavn
+❍ /playlist - Tampilkan daftar putar sekarang
+❍ /current - Tampilkan sedang diputar
+❍ /song <song name> - unduh lagu yang Anda inginkan dengan cepat
+❍ /search <query> - cari video di youtube dengan detail
+❍ /deezer <nama lagu> - unduh lagu yang Anda inginkan dengan cepat melalui deezer
+❍ /saavn <nama lagu> - unduh lagu yang Anda inginkan dengan cepat melalui saavn
+❍ /video <nama lagu> - unduh video yang Anda inginkan dengan cepat
+=>> *Hanya Admin*
+❍ /player - buka panel pengaturan pemutar musik
+❍ /pause - jeda pemutaran lagu
+❍ /resume - melanjutkan pemutaran lagu
+❍ /skip - mainkan lagu berikutnya
+❍ /end - hentikan pemutaran musik
+❍ /userbotjoin - undang asisten ke obrolan Anda
+❍ /admincache - Refresh daftar admin
+=>>   *Tambahkan Manual*
+1) Add Bot Ini Ke grupmu lalu jadikan Admin Dengan Hak admin full
+2) Add assistant Bot yang ada di bio ini ke dalam Grupmu
 """
