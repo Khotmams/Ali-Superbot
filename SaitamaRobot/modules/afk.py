@@ -40,7 +40,7 @@ def afk(update, context):
     fname = update.effective_user.first_name
     try:
         update.effective_message.reply_text(
-            "{} is now Away!".format(fname))
+            "{} Sudah meninggalkan chat!".format(fname))
     except BadRequest:
         pass
 
@@ -62,17 +62,17 @@ def no_longer_afk(update, context):
         firstname = update.effective_user.first_name
         try:
             options = [
-                "{} Is wasting his time in the chat!",
-                "The Dead {} Came Back From His Grave!",
-                "We thought we lost you {}",
-                "Welcome Back {} now pay $100 to Get freedom or get banned!",
-                "{} Good job waking up now get ready for your classes!",
-                "Hey {}! Why weren't you online for such a long time?",
-                "{} why did you came back?",
-                "{} Is now back online!",
-                "OwO, Welcome back {}",
-                "Welcome to hell again {}",
-                "Mission failed successfully {}",
+                "{} hayoo abis ngapain!",
+                "Orang Mati si {} Kembali Dari Kuburannya!",
+                "Kami pikir kami kehilanganmu addh {}",
+                "Welcome Back {} IBAB!",
+                "{} Sibuk mulu ngab kemana aja??!",
+                "Abis Bucin Ya??",
+                "{} Cih balik lagi?",
+                "{} Telah kembali!",
+                "Oi, Ngab! {}",
+                "Selamat Datang yang sudah kembali {}",
+                "Misi Gagal Suksess! {}",
             ]
             chosen_option = random.choice(options)
             update.effective_message.reply_text(
@@ -155,11 +155,11 @@ def __user_info__(user_id):
     text = ""
     if is_afk:
         since_afk = get_readable_time((time.time() - float(REDIS.get(f'afk_time_{user_id}'))))
-        text = "<i>This user is currently afk (away from keyboard).</i>"
-        text += f"\n<i>Last Seen: {since_afk}</i>"
+        text = "<i>Dia udah afk (away from keyboard).</i>"
+        text += f"\n<i>Terakhir Terlihat: {since_afk}</i>"
        
     else:
-        text = "<i>This user currently isn't afk (not away from keyboard).</i>"
+        text = "<i>Udah Balik Nih kagak AFK lagi (not away from keyboard).</i>"
     return text
 
 
@@ -167,11 +167,11 @@ def __gdpr__(user_id):
     end_afk(user_id)
 
 __help__ = """
- • `/afk <reason>`*:* mark yourself as AFK(away from keyboard).
- • `brb <reason>`*:* same as the afk command - but not a command.
-When marked as AFK, any mentions will be replied to with a message to say you're not available!
+ • `/afk <alasan>`*:* tandai dirimu sebagai AFK (away from keyboard).
+ • `brb <alasan>`*:* sama aja buat AFK.
+Ketika ditandai sebagai AFK, penyebutan apa pun akan dibalas dengan pesan yang menyatakan bahwa Anda tidak tersedia!
 """
-__mod_name__ = "AFK"
+__mod_name__ = "💤AFK"
 
 AFK_HANDLER = DisableAbleCommandHandler("afk", afk)
 AFK_REGEX_HANDLER = MessageHandler(Filters.regex("(?i)brb"), afk)
